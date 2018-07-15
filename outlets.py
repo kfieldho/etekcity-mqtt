@@ -12,8 +12,14 @@ class OutletSuite(object):
     def turn(self,name,state):
         if name in self.config_block["outlets"]:
             this_outlet = self.config_block["outlets"][name]
+            if "delay" in this_outlet.keys():
+                delay = this_outlet["delay"]
+            else:
+                delay = self.config_block["default_delay"]
             subprocess.call([self.config_block["code_sender"],
-                this_outlet[state]
+                this_outlet[state],
+                "-p %d"%(self.config_block["pin"]),
+                "-l %d"%(delay)
                 ])
 
     def on(self,name):

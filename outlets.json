@@ -5,7 +5,9 @@
         "channel_prefix": "21outlet/outlets/"
     },
     "outlet_config" : {
-        "code_sender" : "/home/kfieldho/Projects/Personal/RFOutlet/rfoutlet/codesend",
+        "code_sender" : "/usr/local/bin/codesend",
+		"pin": 0,
+		"default_delay": 176,
         "outlets" : {
             "aquarium": {
                 "on" : "284099",
@@ -33,7 +35,8 @@
             },
             "office" : {
                 "on" :  "285955",
-                "off" : "285964"
+                "off" : "285964",
+			    "delay": 177
             },
             "coffee" : {
                 "on" :  "292099",
