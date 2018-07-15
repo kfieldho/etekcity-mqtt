@@ -1,0 +1,44 @@
+{
+    "mqtt_config": {
+        "broker" : "192.168.168.165",
+        "port": 1883,
+        "channel_prefix": "21outlet/outlets/"
+    },
+    "outlet_config" : {
+        "code_sender" : "/home/kfieldho/Projects/Personal/RFOutlet/rfoutlet/codesend",
+        "outlets" : {
+            "aquarium": {
+                "on" : "284099",
+                "off" : "284108"
+            },
+            "growbed": {
+                "on" : "283955",
+                "off" : "283964"
+            },
+            "seedbed": {
+                "on" : "5526835",
+                "off" : "5526844"
+            },
+            "seedheat":{
+                "on" :  "5526979",
+                "off" : "5526988"
+            },
+            "reclinerlights": {
+                    "on":"5527299",
+                    "off": "5527308"
+            },
+            "mfairy":{
+                "on" :  "284419",
+                "off" : "284428"
+            },
+            "office" : {
+                "on" :  "285955",
+                "off" : "285964"
+            },
+            "coffee" : {
+                "on" :  "292099",
+                "off" : "292108"
+            }
+        }
+    }
+}
